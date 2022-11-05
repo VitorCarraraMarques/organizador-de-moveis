@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.dom.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planejador de Móveis </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <script src = "sketch.js"></script>
+    <script src = "movel.js"></script>
+    <header class="cabecalho">
+        <img class="cabecalho-imagem" src="logo.png">
+
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item"> Configurações</a>
+            <a class="cabecalho-menu-item"> Meus planejamentos </a>
+            <a class="cabecalho-menu-item"> Sair</a> 
+        </nav> 
+
+    </header>
+
+    <main class="main" >
+        <section class="main-esquerda"> <!--main-esqueda-->
+            <h3 class="main-esquerda-titulo"> <!--main-esquerda-título-->
+                <p class="main-esquerda-titulo-texto">Crie o cômodo</p> 
+            </h3>
+            
+            <div class="main-esquerda-interativo"> <!--main-esqueda-interativo-->
+                <div class="main-esquerda-interativo-comprimento"> <!--main-esquerda-interativo-comprimento-->
+                    <p class="main-esquerda-interativo-comprimento-label"> <!--main-esquerda-interativo-comprimento-label-->
+                        Comprimento:
+                    </p>
+
+                    <input type="number" class="main-esquerda-interativo-comprimento-numero" id="comodoComprimento"> <!--main-esquerda-interativo-comprimento-numero-->
+                        
+                </div>
+
+                <div class="main-esquerda-interativo-largura"> <!--main-esquerda-interativo-largura-->
+                    <p class="main-esquerda-interativo-largura-label"> <!--main-esquerda-interativo-largura-label-->
+                        Largura: 
+                    </p>
+                    
+                    <input type="number" class="main-esquerda-interativo-largura-numero" id="comodoLargura"> <!--main-esquerda-interativo-largura-numero-->
+                         
+                    
+                </div>
+            </div>
+            
+            <div id="canvasHTML" class="main-esquerda-canvas"></div> <!--main-esquerda-canvas-->
+        </section>
+
+        <section class="main-direita" > <!--main-direita-->
+            <h3 class="main-direita-titulo"> <!--main-direita-título-->
+                Crie o móvel
+            </h3>
+
+            <div class="main-direita-interativo">
+                <div class="main-direita-interativo-comprimento"> <!--main-direita-comprimento-->
+                    <p class="main-direita-interativo-comprimento-label"> <!--main-direita-comprimento-label-->
+                        Comprimento: 
+                    </p>
+
+                    <form>
+                        <input type="number" class="main-direita-interativo-comprimento-numero" id="movelComprimento"> <!--main-direita-comprimento-numero-->
+                    </form>
+                </div>
+
+                <div class="main-direita-interativo-largura"> <!--main-direita-largura-->
+                    <p class="main-direita-interativo-largura-label"> <!--main-direita-largura-label-->
+                        Largura: 
+                    </p>
+                    
+
+                    <form>
+                        <input type="number" class="main-direita-interativo-largura-numero" id="movelLargura"> <!--main-direita-largura-numero-->
+                    </form>
+                </div>
+
+                <div class="main-direita-interativo-nome"> <!--main-direita-nome-->
+                    <p class="main-direita-interativo-nome-label"> <!--main-direita-nome-label-->
+                        Nome: 
+                    </p>
+                    
+                    <input type="text" class="main-direita-interativo-nome-texto" id="comodoNome"> <!--main-direita-nome-texto-->
+                        
+                </div>
+            </div>
+
+            <form> 
+                <input type="button" name="botaoCriarMovel" class="main-direita-botao" id="botaoCriarMovel" placeholder="CRIAR" value="CRIAR" onclick="createMovel()"> <!--main-direita-botao-->
+            </form>
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-info">PLANNER DE MÓVEIS PARA O SEU CÔMODO </p>
+    </footer>
+    
+
+</body>
+</html>

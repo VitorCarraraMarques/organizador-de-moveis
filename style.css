@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Advent+Pro&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+    text-decoration: none; 
+}
+
+body{
+    background: linear-gradient(100.29deg, #8E3C00 3.02%, #7A0000 95.62%);
+    opacity: 0.8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+header{ 
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+    display: flex; 
+    flex-direction: row;
+    border-bottom: 0.4px solid #F0BA92;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.cabecalho-imagem{
+    margin-left:50px; 
+    height: 64px; 
+}
+
+.cabecalho-imagem:hover{
+    cursor: pointer;
+}
+
+.cabecalho-menu{
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 30px; 
+}
+
+.cabecalho-menu-item{
+    font-size: 18px;
+    font-family: 'Advent Pro', sans-serif;
+    color: #F0BA92;
+}
+
+.cabecalho-menu-item:hover{
+    color: #e8d3c3;
+    cursor: pointer; 
+}
+
+.main{
+    padding-top: 32px; 
+    padding-bottom: 10px; 
+    display: flex; 
+    flex-direction: row;
+}
+
+.main-esquerda{
+    display: flex; 
+    flex-direction: column;
+   
+    
+}
+
+.main-esquerda-titulo{
+    margin: 2px;
+    padding: 0px; 
+    font-size: 24px; 
+}
+
+.main-esquerda-titulo-texto{
+    margin: 2px;
+    text-align: center;
+    font-family: 'Aboreto', cursive;
+    color: #F0BA92; 
+}
+
+.main-esquerda-interativo{
+    margin: 2px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: center;
+    padding: 2px; 
+    gap: 20px; 
+}
+
+.main-esquerda-interativo-comprimento{
+    margin: 2px;
+    padding: 2px;  
+    display: flex; 
+    flex-direction: row;
+    
+}
+
+.main-esquerda-interativo-comprimento-label{
+    margin: 2px; 
+    font-size: 20px; 
+    font-family: 'Advent Pro', sans-serif;
+    color: #F0BA92; 
+}
+
+.main-esquerda-interativo-comprimento-numero{ 
+    border: none; 
+    margin: 2px; 
+    background-color: #F0BA92;
+}
+
+.main-esquerda-interativo-comprimento-numero:hover{
+    background-color: #ae815e;
+}
+
+.main-esquerda-interativo-largura{
+    padding: 2px;
+    margin: 2px; 
+    display: flex; 
+    flex-direction: row;
+}
+
+.main-esquerda-interativo-largura-label{ 
+    margin: 2px; 
+    font-size: 20px; 
+    font-family: 'Advent Pro', sans-serif;
+    color: #F0BA92;
+
+}
+
+.main-esquerda-interativo-largura-numero:hover{
+    background-color: #ae815e;
+}
+
+.main-esquerda-interativo-largura-numero{
+    border: none; 
+    margin: 2px;
+    background-color: #F0BA92; 
+}
+
+.main-esquerda-canvas{
+    border: solid #F0BA92;
+    margin-top: 20px; 
+    margin-left: 30px; 
+    border-radius: 2%;  
+}
+
+.main-direita{ 
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+    margin-left: 100px;
+    margin-top: 150px; 
+     
+}
+
+.main-direita-titulo{
+    text-align: center; 
+    font-size: 24px; 
+    font-family: 'Aboreto', cursive;
+    color: #F0BA92;
+    
+}
+
+.main-direita-interativo{
+    padding-top: 20px; 
+    display: flex; 
+    flex-direction: column;
+    gap: 20px; 
+    align-items: flex-end;
+
+}
+
+.main-direita-interativo-comprimento{
+    display: flex; 
+    flex-direction: row;
+}
+
+.main-direita-interativo-comprimento-label{
+    font-size: 20px; 
+    font-family: 'Advent Pro', sans-serif; 
+    color: #F0BA92;;
+}
+
+.main-direita-interativo-comprimento-numero{ 
+    height: 20px;
+    border: none;
+    margin-left: 10px;
+    background-color: #F0BA92;
+    padding-left: 10px; 
+    font-size: 15px; 
+    color:rgb(198, 68, 8);
+}
+
+.main-direita-interativo-comprimento-numero:hover{
+    background-color: #ae815e;
+}
+
+.main-direita-interativo-largura{
+    display: flex; 
+    flex-direction: row;
+}
+
+.main-direita-interativo-largura-label{
+    font-size: 20px; 
+    font-family: 'Advent Pro', sans-serif;
+    color: #F0BA92; 
+}
+
+.main-direita-interativo-largura-numero{
+    height: 20px; 
+    border: none; 
+    margin-left: 10px; 
+    background-color: #F0BA92;
+    padding-left: 10px; 
+    font-size: 15px; 
+    color:rgb(198, 68, 8);
+}
+
+.main-direita-interativo-largura-numero:hover{
+    background-color: #ae815e;
+}
+
+.main-direita-interativo-nome{
+    display: flex; 
+    flex-direction: row;
+}
+
+.main-direita-interativo-nome-label{
+    font-size: 20px; 
+    font-family: 'Advent Pro', sans-serif; 
+    color:#F0BA92;
+     
+}
+
+.main-direita-interativo-nome-texto{
+    height: 20px;
+    border: none; 
+    margin-left: 10px;
+    background-color: #F0BA92;
+    padding-left: 10px; 
+    font-size: 15px; 
+    color:rgb(198, 68, 8); 
+}
+
+.main-direita-interativo-nome-texto:hover{
+    background-color: #ae815e;
+}
+
+.main-direita-botao{
+    display: block; 
+    margin: 0 auto; 
+    margin-top: 10px; 
+    width: 100px;
+    height: 50px;  
+    border-radius: 10%;
+    border: 0.4px solid black;
+    background-color: rgb(107, 51, 6);
+    
+    text-align: center;
+    font-family: 'Aboreto', cursive;
+    font-size: 24px;
+    
+}
+
+.main-direita-botao:hover{
+    background-color: rgb(231, 83, 15);
+    cursor: pointer; 
+}
+
+
+.rodape{
+    margin-top: 30px; 
+    padding-top: 10px; 
+    border-top: 0.4px solid #F0BA92; 
+}
+
+.rodape-info{
+    text-align: center;
+    font-size: 24px; 
+    color: #F0BA92;
+    font-family: 'Aboreto', cursive;
+    display: block; 
+    margin: 0 auto;
+    
+}
